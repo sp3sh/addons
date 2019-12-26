@@ -20,7 +20,7 @@ function playerHasBuff(spellID) -- query buffs on player
         i = i + 1
         buff = select(10,UnitBuff("player", i))
         if buff ~= nil then
-            if buff == spellID then return true end -- if the buff equals he spell id we define then true
+            if buff == spellID then return true end -- if the buff equals the spell id we define then true
         end
     end
     return false
@@ -60,8 +60,8 @@ frameEvent:SetScript('OnUpdate', function(self, elapsed)
                           if not checkFoodBuff() and not UnitIsDeadOrGhost("player") and GetItemCount(10305) > 0 and not playerHasBuff(12175) then 
                             CallSecureFunction ('RunMacroText',("/use Scroll of Protection IV"))
                               else
-                                if UnitAffectingCombat("player") and GetItemCooldown(5079) == 0 and not UnitDebuff("Target", 1139) then
-                                  CallSecureFunction ('RunMacroText',("/use 13")) --13 trinket 1st from top, 14 for 2nd second from top
+                                if UnitAffectingCombat("player") and GetItemCooldown(5079) == 0 and not UnitDebuff("Target", 1139) then -- if we are in combat and the trinket is not on cooldown and the target does not have 
+                                  CallSecureFunction ('RunMacroText',("/use 13"))                                                       -- the trinket debuff already then use item 13,  trinket 1st from top down, 14 for 2nd
                                 end
                           end
 
