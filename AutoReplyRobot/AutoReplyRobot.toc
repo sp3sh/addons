@@ -1,0 +1,23 @@
+﻿## Interface: 60000
+## Title: |cFF00FF00[Beta]|rAutoReplyRobot
+## Title-zhCN: |cFF00FF00[Beta]|r自动回复
+## Title-zhTW: |cFF00FF00[Beta]|r自動回復
+## Notes: |cffbc8f8fA Robot.|r
+## Notes-zhCN: |cff00ff00AutoReplyRobot|r                                             |cffbc8f8f机器人。|r
+## Notes-zhTW: |cff00ff00AutoReplyRobot|r                                             |cffbc8f8f機器人。|r
+## OptionalDeps: Ace3
+## SavedVariables: ARRDB
+## Author: TsungKang
+## X-Embeds: Ace3
+## X-Category: Chat/Communication
+## X-Curse-Packaged-Version: v0.91
+## X-Curse-Project-Name: AutoReplyRobot
+## X-Curse-Project-ID: autoreplyrobot
+## X-Curse-Repository-ID: wow/autoreplyrobot/mainline
+
+embeds.xml
+
+Core.lua
+Brain.lua
+BrainCN.lua
+BrainTW.lua
