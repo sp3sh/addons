@@ -1,4 +1,4 @@
-﻿-- Author      : TsungKang
+-- Author      : TsungKang
 -- Create Date : 11/11/2014 6:29:01 AM
 
 ARR = LibStub("AceAddon-3.0"):NewAddon("ARR", "AceConsole-3.0", "AceEvent-3.0")
@@ -757,7 +757,7 @@ local function sendWhisper(target, msg)
          print("\124cff8888ff[AutoReplyRobot]\124r:SelfMessage：" .. msg);--dont send any message to self
          return false;
       end
-      SendChatMessage(msg .. "     ", "WHISPER","COMMON", target);
+      Chronos.schedule(math.random(5,10),SendChatMessage(msg .. "     ", "WHISPER","COMMON", target);
       return true
    end
 end
@@ -952,5 +952,3 @@ function ARR:CHAT_MSG_CHANNEL(msgtype, msg, sender, ...)
 		end
 	end
 end
-
-
